@@ -13,8 +13,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     return DefaultTabController(
-      initialIndex: 0, // 最初に表示するタブ
+      // initialIndex: 0, // 最初に表示するタブ
       length: 8, // タブの数
       child: Scaffold(
         appBar: AppBar(
@@ -22,6 +23,13 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.end,
             children: const [
               TabBar(
+                indicator: BoxDecoration(
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10.0),
+                        topRight: Radius.circular(10.0)),
+                    color: Colors.white),
+                labelColor: Colors.black,
+                unselectedLabelColor: Colors.white,
                 isScrollable: true,
                 tabs: <Widget>[
                   Tab(text: 'tab1'),
