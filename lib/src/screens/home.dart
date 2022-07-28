@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:j_button/src/screens/tabs/tab1.dart';
+import 'package:j_button/src/screens/tabs/tab2.dart';
+import 'package:j_button/src/screens/tabs/tab3.dart';
+import 'package:j_button/src/screens/tabs/tab4.dart';
+import 'package:j_button/src/screens/tabs/tab5.dart';
+import 'package:j_button/src/screens/tabs/tab6.dart';
+import 'package:j_button/src/screens/tabs/tab7.dart';
+import 'package:j_button/src/screens/tabs/tab8.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,14 +24,14 @@ class HomeScreen extends StatelessWidget {
               TabBar(
                 isScrollable: true,
                 tabs: <Widget>[
-                  Tab(text: '野球'),
-                  Tab(text: 'サッカー'),
-                  Tab(text: 'テニス'),
-                  Tab(text: 'バスケ'),
-                  Tab(text: '剣道'),
-                  Tab(text: '柔道'),
-                  Tab(text: '水泳'),
-                  Tab(text: '卓球'),
+                  Tab(text: 'tab1'),
+                  Tab(text: 'tab2'),
+                  Tab(text: 'tab3'),
+                  Tab(text: 'tab4'),
+                  Tab(text: 'tab5'),
+                  Tab(text: 'tab6'),
+                  Tab(text: 'tab7'),
+                  Tab(text: 'tab8'),
                 ],
               ),
             ],
@@ -31,30 +39,14 @@ class HomeScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: <Widget>[
-            Center(
-              child: Text('野球', style: TextStyle(fontSize: 32.0)),
-            ),
-            Center(
-              child: Text('サッカー', style: TextStyle(fontSize: 32.0)),
-            ),
-            Center(
-              child: Text('テニス', style: TextStyle(fontSize: 32.0)),
-            ),
-            Center(
-              child: Text('バスケ', style: TextStyle(fontSize: 32.0)),
-            ),
-            Center(
-              child: Text('剣道', style: TextStyle(fontSize: 32.0)),
-            ),
-            Center(
-              child: Text('柔道', style: TextStyle(fontSize: 32.0)),
-            ),
-            Center(
-              child: Text('水泳', style: TextStyle(fontSize: 32.0)),
-            ),
-            Center(
-              child: Text('卓球', style: TextStyle(fontSize: 32.0)),
-            ),
+            Tab1(),
+            Tab2(),
+            Tab3(),
+            Tab4(),
+            Tab5(),
+            Tab6(),
+            Tab7(),
+            Tab8(),
           ],
         ),
       ),
