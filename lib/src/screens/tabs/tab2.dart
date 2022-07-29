@@ -13,7 +13,7 @@ class Tab2 extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0),
             children: <Widget>[
-              for (int i = 0; i < 40; i++) ...{
+              for (int i = 0; i < 50; i++) ...{
                 Container(
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     height: size.height * 0.07,
@@ -31,7 +31,8 @@ class Tab2 extends StatelessWidget {
                                             topLeft: Radius.circular(10),
                                             bottomLeft: Radius.circular(10)))),
                                 onPressed: () {},
-                                child: Text('$i'))),
+                                child: const Icon(
+                                    Icons.favorite_border_outlined))),
                         Container(
                           width: 2,
                           color: Colors.black12,
