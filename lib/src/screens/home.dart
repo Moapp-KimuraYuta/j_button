@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:j_button/src/screens/tabs/favo_tab.dart';
 import 'package:j_button/src/screens/tabs/tab1.dart';
 import 'package:j_button/src/screens/tabs/tab2.dart';
 import 'package:j_button/src/screens/tabs/tab3.dart';
@@ -15,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       // initialIndex: 0, // 最初に表示するタブ
-      length: 8, // タブの数
+      length: 9, // タブの数
       child: Scaffold(
         appBar: AppBar(
           flexibleSpace: Column(
@@ -31,6 +32,7 @@ class HomeScreen extends StatelessWidget {
                 unselectedLabelColor: Colors.white,
                 isScrollable: true,
                 tabs: <Widget>[
+                  Tab(icon: Icon(Icons.favorite)),
                   Tab(text: 'tab1'),
                   Tab(text: 'tab2'),
                   Tab(text: 'tab3'),
@@ -46,6 +48,7 @@ class HomeScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: <Widget>[
+            Favorite(),
             Tab1(),
             Tab2(),
             Tab3(),
