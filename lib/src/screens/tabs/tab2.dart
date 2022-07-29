@@ -19,8 +19,8 @@ class Tab2 extends StatelessWidget {
                     height: size.height * 0.07,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Text('$i'),
                       style: ElevatedButton.styleFrom(primary: Colors.amber),
+                      child: Text('$i'),
                     )),
               },
             ],
