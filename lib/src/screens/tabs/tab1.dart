@@ -17,7 +17,6 @@ class Tab1 extends StatelessWidget {
                 Container(
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     height: size.height * 0.07,
-                    width: 20000,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
