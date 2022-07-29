@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:settings_ui/settings_ui.dart';
 
@@ -15,19 +14,19 @@ class SettingScreen extends StatelessWidget {
       body: SettingsList(
         sections: [
           SettingsSection(
-            title: Text('SNS'),
+            title: const Text('SNS'),
             tiles: <SettingsTile>[
               SettingsTile.navigation(
-                title: Text('Twitter'),
-                value: Text('@XXXXX'),
+                title: const Text('Twitter'),
+                value: const Text('@XXXXX'),
               ),
               SettingsTile.navigation(
-                title: Text('Twitter'),
-                value: Text('@XXXXX'),
+                title: const Text('Twitter'),
+                value: const Text('@XXXXX'),
               ),
               SettingsTile.navigation(
-                title: Text('Twitter'),
-                value: Text('@XXXXX'),
+                title: const Text('Twitter'),
+                value: const Text('@XXXXX'),
               ),
             ],
           ),
