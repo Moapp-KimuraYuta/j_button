@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                   Tab(text: 'tab1'),
                   Tab(text: 'tab2'),
                   Tab(text: 'tab3'),
-                  Tab(text: 'tab4'),
+                  Tab(text: 'ものすごーく長いタイトルテキストがついているタブ合計３０文字'),
                   Tab(text: 'tab5'),
                   Tab(text: 'tab6'),
                   Tab(text: 'tab7'),
