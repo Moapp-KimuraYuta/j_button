@@ -13,7 +13,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
     return DefaultTabController(
       // initialIndex: 0, // 最初に表示するタブ
       length: 8, // タブの数
