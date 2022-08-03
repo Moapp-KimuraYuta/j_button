@@ -7,8 +7,11 @@ class Tab0 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    final jasdesu1 = AudioPlayer();
-    jasdesu1.setSource(AssetSource('voices/jasdesu1.mp3'));
+    final jasdesu = AudioPlayer();
+    final okaeritadaima = AudioPlayer();
+    jasdesu.audioCache.load('voices/jasdesu1.mp3');
+    okaeritadaima.audioCache.load('voices/okaeritadaima.mp3');
+
     return Scaffold(
       body: Center(
         child: Scrollbar(
@@ -24,9 +27,21 @@ class Tab0 extends StatelessWidget {
                       height: size.height * 0.07,
                       child: ElevatedButton(
                           onPressed: () {
-                            jasdesu1.play;
+                            jasdesu.play(AssetSource('voices/jasdesu1.mp3'));
                           },
                           child: const Text('じゃすです')))),
+              Container(
+                  margin: const EdgeInsets.symmetric(vertical: 4),
+                  height: size.height * 0.07,
+                  child: SizedBox(
+                      width: size.width * 0.9,
+                      height: size.height * 0.07,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            okaeritadaima
+                                .play(AssetSource('voices/okaeritadaima.mp3'));
+                          },
+                          child: const Text('おかえり、ただいま')))),
             ],
           ),
         ),
