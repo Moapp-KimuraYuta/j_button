@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Tab4 extends StatelessWidget {
-  const Tab4({Key? key}) : super(key: key);
+class Tab0 extends StatelessWidget {
+  const Tab0({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,7 @@ class Tab4 extends StatelessWidget {
                         width: size.width * 0.9,
                         height: size.height * 0.07,
                         child: ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                                'ものすごーく長いテキストものすごーく長いテキストものすごーく長いテキストものすごーく長いテキストものすごーく長い60文字')))),
+                            onPressed: () {}, child: Text('$i')))),
               },
             ],
           ),

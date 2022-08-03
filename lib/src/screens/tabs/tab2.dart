@@ -11,46 +11,17 @@ class Tab2 extends StatelessWidget {
         child: Scrollbar(
           child: ListView(
             padding: EdgeInsets.symmetric(
-                vertical: size.height * 0, horizontal: size.width * 0),
+                vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
-              for (int i = 0; i < 15; i++) ...{
+              for (int i = 0; i < 50; i++) ...{
                 Container(
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     height: size.height * 0.07,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        SizedBox(
-                            width: size.width * 0.15,
-                            height: size.height * 0.07,
-                            child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                    primary: Colors.amber,
-                                    shape: const RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.only(
-                                            topLeft: Radius.circular(10),
-                                            bottomLeft: Radius.circular(10)))),
-                                onPressed: () {},
-                                child: const Icon(
-                                    Icons.favorite_border_outlined))),
-                        Container(
-                          width: 2,
-                          color: Colors.black12,
-                        ),
-                        SizedBox(
-                            width: size.width * 0.75,
-                            height: size.height * 0.07,
-                            child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                    primary: Colors.amber,
-                                    shape: const RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.only(
-                                            topRight: Radius.circular(10),
-                                            bottomRight: Radius.circular(10)))),
-                                onPressed: () {},
-                                child: Text('$i'))),
-                      ],
-                    )),
+                    child: SizedBox(
+                        width: size.width * 0.9,
+                        height: size.height * 0.07,
+                        child: ElevatedButton(
+                            onPressed: () {}, child: Text('$i')))),
               },
             ],
           ),

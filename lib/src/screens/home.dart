@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:j_button/src/screens/tabs/favo_tab.dart';
+import 'package:j_button/src/screens/tabs/tab0.dart';
 import 'package:j_button/src/screens/tabs/tab1.dart';
 import 'package:j_button/src/screens/tabs/tab2.dart';
 import 'package:j_button/src/screens/tabs/tab3.dart';
@@ -32,11 +32,11 @@ class HomeScreen extends StatelessWidget {
                 unselectedLabelColor: Colors.white,
                 isScrollable: true,
                 tabs: <Widget>[
-                  Tab(icon: Icon(Icons.favorite)),
+                  Tab(text: 'tab0'),
                   Tab(text: 'tab1'),
                   Tab(text: 'tab2'),
                   Tab(text: 'tab3'),
-                  Tab(text: 'ものすごーく長いタイトルテキストがついているタブ合計３０文字'),
+                  Tab(text: 'ものすごーく長いタイトルテキストがついているタブ'),
                   Tab(text: 'tab5'),
                   Tab(text: 'tab6'),
                   Tab(text: 'tab7'),
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
         ),
         body: const TabBarView(
           children: <Widget>[
-            Favorite(),
+            Tab0(),
             Tab1(),
             Tab2(),
             Tab3(),
