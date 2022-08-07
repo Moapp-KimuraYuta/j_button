@@ -24,7 +24,7 @@
     </queries>
 
    <application
-        android:label="j_button"
+        android:label="じゃすぼた"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
