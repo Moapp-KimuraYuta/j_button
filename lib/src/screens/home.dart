@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                 unselectedLabelColor: Colors.white,
                 isScrollable: true,
                 tabs: <Widget>[
-                  Tab(text: 'tab0'),
+                  Tab(text: 'ご挨拶'),
                   Tab(text: 'tab1'),
                   Tab(text: 'tab2'),
                   Tab(text: 'tab3'),
