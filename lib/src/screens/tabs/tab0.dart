@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+import 'package:just_audio/just_audio.dart';
 
 class Tab0 extends StatelessWidget {
   const Tab0({Key? key}) : super(key: key);
@@ -7,10 +7,24 @@ class Tab0 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    final jasdesu = AudioPlayer();
-    final okaeritadaima = AudioPlayer();
-    jasdesu.audioCache.load('voices/jasdesu1.mp3');
-    okaeritadaima.audioCache.load('voices/okaeritadaima.mp3');
+    final List<AudioPlayer> _audioPlayerStart = [
+      AudioPlayer(),
+      AudioPlayer(),
+      AudioPlayer(),
+      AudioPlayer(),
+      AudioPlayer(),
+    ];
+    int _audioPlayerStartPtr = 0;
+    void playSound(String str) async {
+      _audioPlayerStartPtr += 1;
+      if (_audioPlayerStartPtr >= _audioPlayerStart.length) {
+        _audioPlayerStartPtr = 0;
+      }
+      _audioPlayerStart[_audioPlayerStartPtr].setAsset(str);
+      await _audioPlayerStart[_audioPlayerStartPtr].pause();
+      await _audioPlayerStart[_audioPlayerStartPtr].seek(Duration.zero);
+      await _audioPlayerStart[_audioPlayerStartPtr].play();
+    }
 
     return Scaffold(
       body: Center(
@@ -27,7 +41,7 @@ class Tab0 extends StatelessWidget {
                       height: size.height * 0.07,
                       child: ElevatedButton(
                           onPressed: () {
-                            jasdesu.play(AssetSource('voices/jasdesu1.mp3'));
+                            playSound('voices/jasdesu1.mp3');
                           },
                           child: const Text('じゃすです')))),
               Container(
@@ -38,8 +52,7 @@ class Tab0 extends StatelessWidget {
                       height: size.height * 0.07,
                       child: ElevatedButton(
                           onPressed: () {
-                            okaeritadaima
-                                .play(AssetSource('voices/okaeritadaima.mp3'));
+                            playSound('voices/okaeritadaima.mp3');
                           },
                           child: const Text('おかえり、ただいま')))),
             ],

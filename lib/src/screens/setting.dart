@@ -44,7 +44,27 @@ class SettingScreen extends StatelessWidget {
                     Spacer(),
                     Text("jasper7se"),
                   ],
-                ))
+                )),
+            Text(
+              '千尋',
+              style: TextStyle(fontSize: size.height * 0.03),
+            ),
+            Text(
+              'アプリ制作者',
+              style: TextStyle(fontSize: size.height * 0.02),
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  launchUrl(Uri.parse('https://twitter.com/chi_hi_roon'),
+                      mode: LaunchMode.externalApplication);
+                },
+                child: Row(
+                  children: const [
+                    Text("Twitter"),
+                    Spacer(),
+                    Text("@chi_hi_roon"),
+                  ],
+                )),
           ],
         ));
   }

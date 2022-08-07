@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
 
 class Tab1 extends StatelessWidget {
   const Tab1({Key? key}) : super(key: key);
@@ -22,11 +21,7 @@ class Tab1 extends StatelessWidget {
                         width: size.width * 0.9,
                         height: size.height * 0.07,
                         child: ElevatedButton(
-                            onPressed: () {
-                              final player = AudioPlayer();
-                              player.play(AssetSource('voices/jasdesu1.mp3'));
-                            },
-                            child: Text('$i')))),
+                            onPressed: () {}, child: Text('$i')))),
               },
             ],
           ),
