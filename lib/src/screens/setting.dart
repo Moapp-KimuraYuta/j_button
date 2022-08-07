@@ -93,7 +93,7 @@ class SettingScreen extends StatelessWidget {
                 onPressed: () {
                   launchUrl(
                       Uri.parse(
-                          'https://github.com/Moapp-KimuraYuta/j_button/blob/master/PrivacyPolicy.html'),
+                          'https://moapp-kimurayuta.github.io/j_button/PrivacyPolicy.html'),
                       mode: LaunchMode.externalApplication);
                 },
                 child: Row(
