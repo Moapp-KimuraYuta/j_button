@@ -85,6 +85,22 @@ class SettingScreen extends StatelessWidget {
                     Text("@chi_hi_roon"),
                   ],
                 )),
+            Text(
+              'PrivacyPolicy',
+              style: TextStyle(fontSize: size.height * 0.03),
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  launchUrl(
+                      Uri.parse(
+                          'https://github.com/Moapp-KimuraYuta/j_button/blob/master/PrivacyPolicy.html'),
+                      mode: LaunchMode.externalApplication);
+                },
+                child: Row(
+                  children: const [
+                    Text("外部サイト"),
+                  ],
+                )),
           ],
         ));
   }
