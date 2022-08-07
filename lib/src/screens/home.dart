@@ -47,6 +47,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         body: const TabBarView(
+          physics: NeverScrollableScrollPhysics(),
           children: <Widget>[
             Tab0(),
             Tab1(),
