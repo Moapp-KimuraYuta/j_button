@@ -46,6 +46,26 @@ class SettingScreen extends StatelessWidget {
                   ],
                 )),
             Text(
+              'まりもんZ',
+              style: TextStyle(fontSize: size.height * 0.03),
+            ),
+            Text(
+              'じゃすぼた考案者',
+              style: TextStyle(fontSize: size.height * 0.02),
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  launchUrl(Uri.parse('https://twitter.com/marimon_z'),
+                      mode: LaunchMode.externalApplication);
+                },
+                child: Row(
+                  children: const [
+                    Text("Twitter"),
+                    Spacer(),
+                    Text("@marimon_z"),
+                  ],
+                )),
+            Text(
               '千尋',
               style: TextStyle(fontSize: size.height * 0.03),
             ),
