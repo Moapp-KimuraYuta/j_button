@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
-class Tab0 extends StatelessWidget {
-  const Tab0({Key? key}) : super(key: key);
+class Goaisatu extends StatelessWidget {
+  const Goaisatu({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

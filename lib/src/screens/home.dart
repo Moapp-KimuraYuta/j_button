@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:j_button/src/screens/tabs/tab0.dart';
+import 'package:j_button/src/screens/tabs/goaisatu.dart';
 import 'package:j_button/src/screens/tabs/tab1.dart';
 import 'package:j_button/src/screens/tabs/tab2.dart';
 import 'package:j_button/src/screens/tabs/tab3.dart';
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                   Tab(text: 'tab1'),
                   Tab(text: 'tab2'),
                   Tab(text: 'tab3'),
-                  Tab(text: 'ものすごーく長いタイトルテキストがついているタブ'),
+                  Tab(text: 'tab4'),
                   Tab(text: 'tab5'),
                   Tab(text: 'tab6'),
                   Tab(text: 'tab7'),
@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
         body: const TabBarView(
           physics: NeverScrollableScrollPhysics(),
           children: <Widget>[
-            Tab0(),
+            Goaisatu(),
             Tab1(),
             Tab2(),
             Tab3(),
