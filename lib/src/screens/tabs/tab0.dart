@@ -33,123 +33,42 @@ class Tab0 extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/jasimnida.mp3');
-                          },
-                          child: const Text('나의 이름은 다지마 게이고입니다.')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/jasdesu1.mp3');
-                          },
-                          child: const Text('じゃすです')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/jasdesu2.mp3');
-                          },
-                          child: const Text('じゃすです、本日もAPEXをやっていきたいと思います')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/okaeritadaima.mp3');
-                          },
-                          child: const Text('おかえり、ただいま')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/konbanwa.mp3');
-                          },
-                          child: const Text('こんばんは、じゃすぱーと申します')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/oja001.mp3');
-                          },
-                          child: const Text('おじゃ001')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/oissu.mp3');
-                          },
-                          child: const Text('おいっす！')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/jasdesu3.mp3');
-                          },
-                          child: const Text(
-                              'TAKE1)じゃすです、本日はValorantをやっていきたいと思います')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/jasdesu4.mp3');
-                          },
-                          child: const Text(
-                              'TAKE3)じゃすです、本日はValorantをやっていきたいと思います')))),
-              Container(
-                  margin: const EdgeInsets.symmetric(vertical: 4),
-                  height: size.height * 0.07,
-                  child: SizedBox(
-                      width: size.width * 0.9,
-                      height: size.height * 0.07,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            playSound('voices/goaisatu/jasdesu5.mp3');
-                          },
-                          child: const Text(
-                              'TAKE3)じゃすです、本日はValorantをやっていきたいと思います')))),
+              button(size, playSound, 'voices/goaisatu/jasimnida.mp3',
+                  '나의 이름은 다지마 게이고입니다.'),
+              button(size, playSound, 'voices/goaisatu/jasdesu1.mp3', 'じゃすです'),
+              button(size, playSound, 'voices/goaisatu/jasdesu2.mp3',
+                  'じゃすです、本日もAPEXをやっていきたいと思います'),
+              button(size, playSound, 'voices/goaisatu/okaeritadaima.mp3',
+                  'おかえり、ただいま'),
+              button(size, playSound, 'voices/goaisatu/konbanwa.mp3',
+                  'こんばんは、じゃすぱーと申します'),
+              button(size, playSound, 'voices/goaisatu/oja001.mp3', 'おじゃ001'),
+              button(size, playSound, 'voices/goaisatu/oissu.mp3', 'おいっす！'),
+              button(size, playSound, 'voices/goaisatu/jasdesu3.mp3',
+                  'TAKE1)じゃすです、本日はValorantをやっていきたいと思います'),
+              button(size, playSound, 'voices/goaisatu/jasdesu4.mp3',
+                  'TAKE2)じゃすです、本日はValorantをやっていきたいと思います'),
+              button(size, playSound, 'voices/goaisatu/jasdesu5.mp3',
+                  'TAKE3)じゃすです、本日はValorantをやっていきたいと思います'),
             ],
           ),
         ),
       ),
     );
+  }
+
+  Container button(Size size, void Function(String str) playSound,
+      String assetPath, String text) {
+    return Container(
+        margin: const EdgeInsets.symmetric(vertical: 4),
+        height: size.height * 0.07,
+        child: SizedBox(
+            width: size.width * 0.9,
+            height: size.height * 0.07,
+            child: ElevatedButton(
+                onPressed: () {
+                  playSound(assetPath);
+                },
+                child: Text(text))));
   }
 }
