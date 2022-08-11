@@ -52,7 +52,8 @@ class Goaisatu extends StatelessWidget {
   }
 
   Container button(Size size, void Function(String str) playSound,
-      String assetPath, String text) {
+      String assetPath, String text,
+      [bool isPurple = false]) {
     return Container(
         margin: const EdgeInsets.symmetric(vertical: 4),
         height: size.height * 0.07,
@@ -63,6 +64,8 @@ class Goaisatu extends StatelessWidget {
                 onPressed: () {
                   playSound(assetPath);
                 },
+                style: ElevatedButton.styleFrom(
+                    primary: isPurple ? Colors.purple : Colors.blue),
                 child: Text(
                   text,
                   style: TextStyle(fontSize: size.height * 0.015),

@@ -29,9 +29,9 @@ class MeisceneMeigen extends StatelessWidget {
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
               button(size, playSound, 'voices/meiscene_meigen/ojihara.mp3',
-                  'おじさんハラスメント'),
+                  'おじさんハラスメント', true),
               button(size, playSound,
-                  'voices/meiscene_meigen/umasugiteheta.mp3', '上手すぎて下手'),
+                  'voices/meiscene_meigen/umasugiteheta.mp3', '上手すぎて下手', true),
               button(size, playSound, 'voices/meiscene_meigen/dudun.mp3',
                   'ヅヅン！ペッパー！'),
               button(size, playSound, 'voices/meiscene_meigen/bronze2.mp3',
@@ -159,7 +159,8 @@ class MeisceneMeigen extends StatelessWidget {
   }
 
   Container button(Size size, void Function(String str) playSound,
-      String assetPath, String text) {
+      String assetPath, String text,
+      [bool isPurple = false]) {
     return Container(
         margin: const EdgeInsets.symmetric(vertical: 4),
         height: size.height * 0.07,
@@ -170,6 +171,8 @@ class MeisceneMeigen extends StatelessWidget {
                 onPressed: () {
                   playSound(assetPath);
                 },
+                style: ElevatedButton.styleFrom(
+                    primary: isPurple ? Colors.purple : Colors.blue),
                 child: Text(
                   text,
                   style: TextStyle(fontSize: size.height * 0.015),
