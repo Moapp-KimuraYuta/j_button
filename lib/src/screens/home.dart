@@ -5,7 +5,7 @@ import 'package:j_button/src/screens/tabs/meiscene.dart';
 import 'package:j_button/src/screens/tabs/meigen_kakugen.dart';
 import 'package:j_button/src/screens/tabs/motitu_motaretu.dart';
 import 'package:j_button/src/screens/tabs/meiscene_meigen.dart';
-import 'package:j_button/src/screens/tabs/tab6.dart';
+import 'package:j_button/src/screens/tabs/eguite.dart';
 import 'package:j_button/src/screens/tabs/tab7.dart';
 import 'package:j_button/src/screens/tabs/tab8.dart';
 import 'package:just_audio/just_audio.dart';
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Tab(text: '名言・格言'),
                   Tab(text: '持ちつ持たれつ'),
                   Tab(text: '迷シーン・迷言'),
-                  Tab(text: 'tab6'),
+                  Tab(text: 'えぐいて'),
                   Tab(text: 'tab7'),
                   Tab(text: 'tab8'),
                 ],
@@ -79,7 +79,9 @@ class _HomeScreenState extends State<HomeScreen> {
             MeisceneMeigen(
               audioPlayerStart: audioPlayer,
             ),
-            Tab6(),
+            Eguite(
+              audioPlayerStart: audioPlayer,
+            ),
             Tab7(),
             Tab8(),
           ],
