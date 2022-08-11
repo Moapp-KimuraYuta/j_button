@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
-class Mutekijoutai extends StatelessWidget {
-  const Mutekijoutai({Key? key, required this.audioPlayerStart})
-      : super(key: key);
+class MeiScene extends StatelessWidget {
+  const MeiScene({Key? key, required this.audioPlayerStart}) : super(key: key);
   final List<AudioPlayer> audioPlayerStart;
 
   @override
@@ -28,25 +27,19 @@ class Mutekijoutai extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
-              button(size, playSound, 'voices/mutekijoutai/lol1.mp3',
-                  'KR版リーグ・オブ・レジェンド タワーボイス1'),
-              button(size, playSound, 'voices/mutekijoutai/lol2.mp3',
-                  'KR版リーグ・オブ・レジェンド タワーボイス2'),
-              button(size, playSound, 'voices/mutekijoutai/lol3.mp3',
-                  'KR版リーグ・オブ・レジェンド タワーボイス3'),
               button(
-                  size,
-                  playSound,
-                  'voices/mutekijoutai/shinekoshinetanjent.mp3',
-                  'しね？こしね？タンジェント？'),
-              button(size, playSound, 'voices/mutekijoutai/noahnidereru.mp3',
-                  'のあちゃんにﾃﾞﾚﾙ顎'),
-              button(size, playSound, 'voices/mutekijoutai/yuigadokuson1.mp3',
-                  'これ結構おれ無敵状態入ってるからラッシュとかじゃなくてゆっくり狙っていっていいですか?「俺のワンピック待って」'),
-              button(size, playSound, 'voices/mutekijoutai/mei_africapie.mp3',
-                  'アフリカパイ'),
-              button(size, playSound, 'voices/mutekijoutai/tsu_gomikyaku.mp3',
-                  'ゴミ客'),
+                  size, playSound, 'voices/mei_scene/g7scout.mp3', '!G7scout'),
+              button(size, playSound, 'voices/mei_scene/jaana.mp3', 'じゃーな'),
+              button(size, playSound, 'voices/mei_scene/kusoaimshita.mp3',
+                  '糞エイムした俺'),
+              button(size, playSound, 'voices/mei_scene/nicetryxq1.mp3',
+                  'XQQ「ナイストライ」'),
+              button(size, playSound, 'voices/mei_scene/tasukete.mp3', '誰か助けて'),
+              button(size, playSound, 'voices/mei_scene/4ninkousoku.mp3',
+                  '4人拘束するウルトに歓喜'),
+              button(size, playSound, 'voices/mei_scene/fa_bck.mp3', 'BCK'),
+              button(size, playSound, 'voices/mei_scene/hevun_nasai.mp3',
+                  'ヘブンなさい'),
             ],
           ),
         ),

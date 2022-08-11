@@ -2,18 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
 class Goaisatu extends StatelessWidget {
-  const Goaisatu({Key? key}) : super(key: key);
+  const Goaisatu({Key? key, required this.audioPlayerStart}) : super(key: key);
+  final List<AudioPlayer> audioPlayerStart;
 
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    final List<AudioPlayer> audioPlayerStart = [
-      AudioPlayer(),
-      AudioPlayer(),
-      AudioPlayer(),
-      AudioPlayer(),
-      AudioPlayer(),
-    ];
     int audioPlayerStartPtr = 0;
     void playSound(String str) async {
       audioPlayerStartPtr += 1;
@@ -36,7 +30,7 @@ class Goaisatu extends StatelessWidget {
               button(size, playSound, 'voices/goaisatu/jasimnida.mp3',
                   '나의 이름은 다지마 게이고입니다.'),
               button(size, playSound, 'voices/goaisatu/jasdesu1.mp3', 'じゃすです'),
-              button(size, playSound, 'voices/goaisatu/jasdesu2.mp3',
+              button(size, playSound, 'voices/01_goaisatu/jasdesu2.mp3',
                   'じゃすです、本日もAPEXをやっていきたいと思います'),
               button(size, playSound, 'voices/goaisatu/okaeritadaima.mp3',
                   'おかえり、ただいま'),

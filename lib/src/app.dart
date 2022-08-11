@@ -26,7 +26,7 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  static const _screens = [HomeScreen(), SettingScreen()];
+  static final _screens = [HomeScreen(), const SettingScreen()];
 
   int _selectedIndex = 0;
 

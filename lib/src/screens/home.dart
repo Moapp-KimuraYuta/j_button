@@ -1,16 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:j_button/src/screens/tabs/goaisatu.dart';
 import 'package:j_button/src/screens/tabs/mutekijoutai.dart';
-import 'package:j_button/src/screens/tabs/tab2.dart';
+import 'package:j_button/src/screens/tabs/mei_scene.dart';
 import 'package:j_button/src/screens/tabs/tab3.dart';
 import 'package:j_button/src/screens/tabs/tab4.dart';
 import 'package:j_button/src/screens/tabs/tab5.dart';
 import 'package:j_button/src/screens/tabs/tab6.dart';
 import 'package:j_button/src/screens/tabs/tab7.dart';
 import 'package:j_button/src/screens/tabs/tab8.dart';
+import 'package:just_audio/just_audio.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  List<AudioPlayer> audioPlayer = [
+    AudioPlayer(),
+    AudioPlayer(),
+    AudioPlayer(),
+    AudioPlayer(),
+    AudioPlayer(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                 tabs: <Widget>[
                   Tab(text: 'ご挨拶'),
                   Tab(text: '無敵状態音声（仮）'),
-                  Tab(text: 'tab2'),
+                  Tab(text: '名シーン'),
                   Tab(text: 'tab3'),
                   Tab(text: 'tab4'),
                   Tab(text: 'tab5'),
@@ -46,12 +60,16 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: const TabBarView(
-          physics: NeverScrollableScrollPhysics(),
+        body: TabBarView(
+          physics: const NeverScrollableScrollPhysics(),
           children: <Widget>[
-            Goaisatu(),
-            Mutekijoutai(),
-            Tab2(),
+            Goaisatu(audioPlayerStart: audioPlayer),
+            Mutekijoutai(
+              audioPlayerStart: audioPlayer,
+            ),
+            MeiScene(
+              audioPlayerStart: audioPlayer,
+            ),
             Tab3(),
             Tab4(),
             Tab5(),
