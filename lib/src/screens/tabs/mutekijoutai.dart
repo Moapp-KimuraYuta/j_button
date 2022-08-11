@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
-class Goaisatu extends StatelessWidget {
-  const Goaisatu({Key? key}) : super(key: key);
+class Mutekijoutai extends StatelessWidget {
+  const Mutekijoutai({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,23 +33,25 @@ class Goaisatu extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
-              button(size, playSound, 'voices/goaisatu/jasimnida.mp3',
-                  '나의 이름은 다지마 게이고입니다.'),
-              button(size, playSound, 'voices/goaisatu/jasdesu1.mp3', 'じゃすです'),
-              button(size, playSound, 'voices/goaisatu/jasdesu2.mp3',
-                  'じゃすです、本日もAPEXをやっていきたいと思います'),
-              button(size, playSound, 'voices/goaisatu/okaeritadaima.mp3',
-                  'おかえり、ただいま'),
-              button(size, playSound, 'voices/goaisatu/konbanwa.mp3',
-                  'こんばんは、じゃすぱーと申します'),
-              button(size, playSound, 'voices/goaisatu/oja001.mp3', 'おじゃ001'),
-              button(size, playSound, 'voices/goaisatu/oissu.mp3', 'おいっす！'),
-              button(size, playSound, 'voices/goaisatu/jasdesu3.mp3',
-                  'TAKE1)じゃすです、本日はValorantをやっていきたいと思います'),
-              button(size, playSound, 'voices/goaisatu/jasdesu4.mp3',
-                  'TAKE2)じゃすです、本日はValorantをやっていきたいと思います'),
-              button(size, playSound, 'voices/goaisatu/jasdesu5.mp3',
-                  'TAKE3)じゃすです、本日はValorantをやっていきたいと思います'),
+              button(size, playSound, 'voices/mutekijoutai/lol1.mp3',
+                  'KR版リーグ・オブ・レジェンド タワーボイス1'),
+              button(size, playSound, 'voices/mutekijoutai/lol2.mp3',
+                  'KR版リーグ・オブ・レジェンド タワーボイス2'),
+              button(size, playSound, 'voices/mutekijoutai/lol3.mp3',
+                  'KR版リーグ・オブ・レジェンド タワーボイス3'),
+              button(
+                  size,
+                  playSound,
+                  'voices/mutekijoutai/shinekoshinetanjent.mp3',
+                  'しね？こしね？タンジェント？'),
+              button(size, playSound, 'voices/mutekijoutai/noahnidereru.mp3',
+                  'のあちゃんにﾃﾞﾚﾙ顎'),
+              button(size, playSound, 'voices/mutekijoutai/yuigadokuson1.mp3',
+                  'これ結構おれ無敵状態入ってるからラッシュとかじゃなくてゆっくり狙っていっていいですか?「俺のワンピック待って」'),
+              button(size, playSound, 'voices/mutekijoutai/mei_africapie.mp3',
+                  'アフリカパイ'),
+              button(size, playSound, 'voices/mutekijoutai/tsu_gomikyaku.mp3',
+                  'ゴミ客'),
             ],
           ),
         ),

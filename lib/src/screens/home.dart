@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:j_button/src/screens/tabs/goaisatu.dart';
-import 'package:j_button/src/screens/tabs/tab1.dart';
+import 'package:j_button/src/screens/tabs/mutekijoutai.dart';
 import 'package:j_button/src/screens/tabs/tab2.dart';
 import 'package:j_button/src/screens/tabs/tab3.dart';
 import 'package:j_button/src/screens/tabs/tab4.dart';
@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 isScrollable: true,
                 tabs: <Widget>[
                   Tab(text: 'ご挨拶'),
-                  Tab(text: 'tab1'),
+                  Tab(text: '無敵状態音声（仮）'),
                   Tab(text: 'tab2'),
                   Tab(text: 'tab3'),
                   Tab(text: 'tab4'),
@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
           physics: NeverScrollableScrollPhysics(),
           children: <Widget>[
             Goaisatu(),
-            Tab1(),
+            Mutekijoutai(),
             Tab2(),
             Tab3(),
             Tab4(),
