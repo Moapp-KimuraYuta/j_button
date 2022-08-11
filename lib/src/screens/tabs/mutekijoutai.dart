@@ -73,7 +73,7 @@ class Mutekijoutai extends StatelessWidget {
                 },
                 child: Text(
                   text,
-                  style: TextStyle(fontSize: size.width * 0.035),
+                  style: TextStyle(fontSize: size.height * 0.015),
                 ))));
   }
 }

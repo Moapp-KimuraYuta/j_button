@@ -9,7 +9,7 @@ class SettingScreen extends StatelessWidget {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Settings'),
+          title: const Text('設定'),
           centerTitle: true,
         ),
         body: ListView(
