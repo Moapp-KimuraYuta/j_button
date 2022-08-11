@@ -30,7 +30,7 @@ class Goaisatu extends StatelessWidget {
               button(size, playSound, 'voices/goaisatu/jasimnida.mp3',
                   '나의 이름은 다지마 게이고입니다.'),
               button(size, playSound, 'voices/goaisatu/jasdesu.mp3', 'じゃすです'),
-              button(size, playSound, 'voices/01_goaisatu/jasdesu2.mp3',
+              button(size, playSound, 'voices/goaisatu/jasdesu2.mp3',
                   'じゃすです、本日もAPEXをやっていきたいと思います'),
               button(size, playSound, 'voices/goaisatu/okaeritadaima.mp3',
                   'おかえり、ただいま'),

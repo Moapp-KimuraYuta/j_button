@@ -13,7 +13,6 @@ class SettingScreen extends StatelessWidget {
           centerTitle: true,
         ),
         body: ListView(
-          physics: const NeverScrollableScrollPhysics(),
           padding: EdgeInsets.symmetric(
               horizontal: size.width * 0.05, vertical: size.height * 0.01),
           children: [
