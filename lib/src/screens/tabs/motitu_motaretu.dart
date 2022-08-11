@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
-class MeiScene extends StatelessWidget {
-  const MeiScene({Key? key, required this.audioPlayerStart}) : super(key: key);
+class MotituMotaretu extends StatelessWidget {
+  const MotituMotaretu({Key? key, required this.audioPlayerStart})
+      : super(key: key);
   final List<AudioPlayer> audioPlayerStart;
 
   @override
@@ -27,19 +28,29 @@ class MeiScene extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
+              button(size, playSound,
+                  'voices/motitu_motaretu/motitsumotaretsu.mp3', '持ちつもたれつよ！'),
+              button(size, playSound,
+                  'voices/motitu_motaretu/motitsumotaretsu2.mp3', 'もちつ？持たれつ！'),
+              button(size, playSound,
+                  'voices/motitu_motaretu/motitsumotaretsu3.mp3', '持たれつ！'),
+              button(size, playSound,
+                  'voices/motitu_motaretu/motitsumotaretsu4.mp3', 'もちつ？もたれつぅ！'),
               button(
-                  size, playSound, 'voices/mei_scene/g7scout.mp3', '!G7scout'),
-              button(size, playSound, 'voices/mei_scene/jaana.mp3', 'じゃーな'),
-              button(size, playSound, 'voices/mei_scene/kusoaimshita.mp3',
-                  '糞エイムした俺'),
-              button(size, playSound, 'voices/mei_scene/nicetryxq1.mp3',
-                  'XQQ「ナイストライ」'),
-              button(size, playSound, 'voices/mei_scene/tasukete.mp3', '誰か助けて'),
-              button(size, playSound, 'voices/mei_scene/4ninkousoku.mp3',
-                  '4人拘束するウルトに歓喜'),
-              button(size, playSound, 'voices/mei_scene/fa_bck.mp3', 'BCK'),
-              button(size, playSound, 'voices/mei_scene/hevun_nasai.mp3',
-                  'ヘブンなさい'),
+                  size,
+                  playSound,
+                  'voices/motitu_motaretu/motitsumotaretsu5.mp3',
+                  '持ちつ・・・( ﾟдﾟ)ﾊｯ!'),
+              button(
+                  size,
+                  playSound,
+                  'voices/motitu_motaretu/motitsumotaretsu6.mp3',
+                  '持ちつ持たれつなんだって！'),
+              button(
+                  size,
+                  playSound,
+                  'voices/motitu_motaretu/motitsumotaretsu7.mp3',
+                  'J「持ちつ？」ロレ「持たれつ」VDK「俺は？」'),
             ],
           ),
         ),

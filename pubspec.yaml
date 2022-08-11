@@ -74,8 +74,10 @@ flutter:
     - images/
     - voices/goaisatu/
     - voices/mutekijoutai/
-    - voices/mei_scene/
+    - voices/meiscene/
     - voices/meigen_kakugen/
+    - voices/motitu_motaretu/
+    - voices/meiscene_meigen/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
