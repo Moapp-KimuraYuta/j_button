@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:j_button/src/screens/tabs/goaisatu.dart';
 import 'package:j_button/src/screens/tabs/mutekijoutai.dart';
 import 'package:j_button/src/screens/tabs/mei_scene.dart';
-import 'package:j_button/src/screens/tabs/tab3.dart';
+import 'package:j_button/src/screens/tabs/meigen_kakugen.dart';
 import 'package:j_button/src/screens/tabs/tab4.dart';
 import 'package:j_button/src/screens/tabs/tab5.dart';
 import 'package:j_button/src/screens/tabs/tab6.dart';
@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Tab(text: 'ご挨拶'),
                   Tab(text: '無敵状態音声（仮）'),
                   Tab(text: '名シーン'),
-                  Tab(text: 'tab3'),
+                  Tab(text: '名言・格言'),
                   Tab(text: 'tab4'),
                   Tab(text: 'tab5'),
                   Tab(text: 'tab6'),
@@ -70,7 +70,9 @@ class _HomeScreenState extends State<HomeScreen> {
             MeiScene(
               audioPlayerStart: audioPlayer,
             ),
-            Tab3(),
+            MeigenKakugen(
+              audioPlayerStart: audioPlayer,
+            ),
             Tab4(),
             Tab5(),
             Tab6(),
