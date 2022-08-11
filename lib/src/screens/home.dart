@@ -54,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Tab(text: '迷シーン・迷言'),
                   Tab(text: 'えぐいて'),
                   Tab(text: 'ポーン'),
-                  Tab(text: 'tab8'),
+                  Tab(text: 'タルコフ2022/06 - スタック編'),
                 ],
               ),
             ],
@@ -85,7 +85,9 @@ class _HomeScreenState extends State<HomeScreen> {
             Poon(
               audioPlayerStart: audioPlayer,
             ),
-            Tab8(),
+            Tarkov(
+              audioPlayerStart: audioPlayer,
+            ),
           ],
         ),
       ),
