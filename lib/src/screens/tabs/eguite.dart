@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:j_button/src/Widgets/button.dart';
-import 'package:j_button/src/screens/home.dart';
+import 'package:j_button/src/screens/jasbota.dart';
 
 class Eguite extends StatelessWidget {
   const Eguite(this.size, this.audio, {Key? key}) : super(key: key);
@@ -10,6 +10,7 @@ class Eguite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: Center(
         child: Scrollbar(
           child: ListView(

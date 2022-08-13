@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:j_button/src/Widgets/background.dart';
 
-import 'screens/setting.dart';
-import 'screens/home.dart';
+import 'screens/infomation.dart';
+import 'screens/jasbota.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -26,7 +27,7 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  static final _screens = [HomeScreen(), const SettingScreen()];
+  static const _screens = [Jasbota(), Infomation()];
 
   int _selectedIndex = 0;
 
@@ -39,14 +40,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: _screens[_selectedIndex],
+        body: Stack(children: [const Background(), _screens[_selectedIndex]]),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
                 icon: Icon(Icons.music_note), label: 'じゃすぼた'),
-            BottomNavigationBarItem(icon: Icon(Icons.settings), label: '設定'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.info_outline), label: 'Info'),
           ],
           type: BottomNavigationBarType.fixed,
         ));

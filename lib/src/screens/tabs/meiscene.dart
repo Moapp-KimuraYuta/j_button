@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:j_button/src/Widgets/button.dart';
-import 'package:j_button/src/screens/home.dart';
+import 'package:j_button/src/screens/jasbota.dart';
 
 class MeiScene extends StatelessWidget {
   const MeiScene(this.size, this.audio, {Key? key}) : super(key: key);
@@ -10,6 +10,7 @@ class MeiScene extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: Center(
         child: Scrollbar(
           child: ListView(

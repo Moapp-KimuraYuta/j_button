@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:j_button/src/screens/home.dart';
+import 'package:j_button/src/screens/jasbota.dart';
 
 class Button extends StatelessWidget {
   const Button(this.size, this.audio, this.assetPath, this.text,

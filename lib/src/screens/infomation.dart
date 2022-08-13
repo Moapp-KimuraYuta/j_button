@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class SettingScreen extends StatelessWidget {
-  const SettingScreen({Key? key}) : super(key: key);
+class Infomation extends StatelessWidget {
+  const Infomation({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
+        backgroundColor: Colors.transparent,
         appBar: AppBar(
-          title: const Text('設定'),
+          title: const Text('Infomation'),
           centerTitle: true,
         ),
         body: ListView(
