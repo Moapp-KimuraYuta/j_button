@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:j_button/src/screens/home.dart';
 
 class Button extends StatelessWidget {
-  const Button(this.size, this.playSound, this.assetPath, this.text,
+  const Button(this.size, this.audio, this.assetPath, this.text,
       {Key? key, this.isPurple = false})
       : super(key: key);
 
   final Size size;
-  final void Function(String str) playSound;
+  final Audio audio;
   final String assetPath;
   final String text;
   final bool isPurple;
@@ -21,7 +22,7 @@ class Button extends StatelessWidget {
             height: size.height * 0.07,
             child: ElevatedButton(
                 onPressed: () {
-                  playSound(assetPath);
+                  audio.playSound(assetPath);
                 },
                 style: ElevatedButton.styleFrom(
                     primary: isPurple ? Colors.purple : Colors.blue),
