@@ -30,48 +30,21 @@ class Jasbota extends StatelessWidget {
   Jasbota({Key? key}) : super(key: key);
 
   final Audio audio = Audio();
-  final List<Widget> tabs = [
-    const Tab(text: 'ご挨拶'),
-    const Tab(text: '無敵状態音声（仮）'),
-    const Tab(text: '名シーン'),
-    const Tab(text: '名言・格言'),
-    const Tab(text: '持ちつ持たれつ'),
-    const Tab(text: '迷シーン・迷言'),
-    const Tab(text: 'えぐいて'),
-    const Tab(text: 'ポーン'),
-    const Tab(text: 'タルコフ2022/06 - スタック編'),
-    const Tab(text: 'RUSTストリーマー鯖2022/06 - JAS航空編'),
-    const Tab(text: 'DQXIS - じゃすカジノ編'),
-    const Tab(text: 'カラス・鳩'),
-    const Tab(text: 'はにゃ？'),
-    const Tab(text: '鋭いツッコミ'),
-    const Tab(text: 'ナイス・OK'),
-    const Tab(text: 'おもろいやん'),
-    const Tab(text: 'やろや'),
-    const Tab(text: '連呼'),
-    const Tab(text: 'ｈ'),
-    const Tab(text: '釈迦さん'),
-    const Tab(text: 'そっくりさん'),
-    const Tab(text: '叫ぶ系'),
-    const Tab(text: '○○のJ'),
-    const Tab(text: '整理中１'),
-    const Tab(text: '整理中２'),
-  ];
 
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return DefaultTabController(
-      // initialIndex: 0, // 最初に表示するタブ
-      length: tabs.length, // タブの数
+      initialIndex: 0, // 最初に表示するタブ
+      length: 25, // タブの数
       child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             flexibleSpace: Column(
               mainAxisAlignment: MainAxisAlignment.end,
-              children: [
+              children: const [
                 TabBar(
-                    indicator: const BoxDecoration(
+                    indicator: BoxDecoration(
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(10.0),
                             topRight: Radius.circular(10.0)),
@@ -79,12 +52,37 @@ class Jasbota extends StatelessWidget {
                     labelColor: Colors.black,
                     unselectedLabelColor: Colors.white,
                     isScrollable: true,
-                    tabs: tabs),
+                    tabs: <Widget>[
+                      Tab(text: 'ご挨拶'),
+                      Tab(text: '無敵状態音声（仮）'),
+                      Tab(text: '名シーン'),
+                      Tab(text: '名言・格言'),
+                      Tab(text: '持ちつ持たれつ'),
+                      Tab(text: '迷シーン・迷言'),
+                      Tab(text: 'えぐいて'),
+                      Tab(text: 'ポーン'),
+                      Tab(text: 'タルコフ2022/06 - スタック編'),
+                      Tab(text: 'RUSTストリーマー鯖2022/06 - JAS航空編'),
+                      Tab(text: 'DQXIS - じゃすカジノ編'),
+                      Tab(text: 'カラス・鳩'),
+                      Tab(text: 'はにゃ？'),
+                      Tab(text: '鋭いツッコミ'),
+                      Tab(text: 'ナイス・OK'),
+                      Tab(text: 'おもろいやん'),
+                      Tab(text: 'やろや'),
+                      Tab(text: '連呼'),
+                      Tab(text: 'ｈ'),
+                      Tab(text: '釈迦さん'),
+                      Tab(text: 'そっくりさん'),
+                      Tab(text: '叫ぶ系'),
+                      Tab(text: '○○のJ'),
+                      Tab(text: '整理中１'),
+                      Tab(text: '整理中２'),
+                    ]),
               ],
             ),
           ),
           body: TabBarView(
-            // physics: const NeverScrollableScrollPhysics(),
             children: <Widget>[
               Goaisatu(size, audio),
               Mutekijoutai(size, audio),
@@ -120,10 +118,10 @@ class Jasbota extends StatelessWidget {
 class Audio {
   List<AudioPlayer> audioPlayer = [
     AudioPlayer(),
-    // AudioPlayer(),
-    // AudioPlayer(),
-    // AudioPlayer(),
-    // AudioPlayer(),
+    AudioPlayer(),
+    AudioPlayer(),
+    AudioPlayer(),
+    AudioPlayer(),
   ];
   int audioPlayerStartPtr = 0;
   void playSound(String str) async {
