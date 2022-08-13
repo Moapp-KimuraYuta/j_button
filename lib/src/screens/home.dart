@@ -45,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       // initialIndex: 0, // 最初に表示するタブ
-      length: 1, // タブの数
+      length: 2, // タブの数
       child: Scaffold(
         appBar: AppBar(
           flexibleSpace: Column(
@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 isScrollable: true,
                 tabs: <Widget>[
                   Tab(text: 'ご挨拶'),
-                  // Tab(text: '無敵状態音声（仮）'),
+                  Tab(text: '無敵状態音声（仮）'),
                   // Tab(text: '名シーン'),
                   // Tab(text: '名言・格言'),
                   // Tab(text: '持ちつ持たれつ'),
@@ -79,9 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
           physics: const NeverScrollableScrollPhysics(),
           children: <Widget>[
             Goaisatu(audio),
-            // Mutekijoutai(
-            //   audioPlayerStart: audioPlayer,
-            // ),
+            Mutekijoutai(audio),
             // MeiScene(
             //   audioPlayerStart: audioPlayer,
             // ),
