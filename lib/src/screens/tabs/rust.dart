@@ -39,7 +39,7 @@ class Rust extends StatelessWidget {
                   '初回無料ということで安心安全信頼と実績でやってきました。この道6年、23歳、じゃすぱーが担当しております。'),
               Button(size, audio, 'voices/rust/rust06_jaskoukuu6.mp3',
                   'それでは、空の旅へ。翼を授ける'),
-              Button(size, audio, 'voices/rust/rust06_jaskoukuu012.mp3',
+              Button(size, audio, 'voices/rust/rust06_jaskoukuu12.mp3',
                   'JS・・・JAS航空。安心安全と実績と信頼でやってきました、今年23歳。'),
               Button(size, audio, 'voices/rust/rust06_jassann1.mp3',
                   'JASSANも立ち上げたいんだよなあ'),

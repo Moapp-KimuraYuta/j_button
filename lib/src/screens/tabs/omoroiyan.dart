@@ -57,8 +57,8 @@ class Omoroiyan extends StatelessWidget {
                   size, audio, 'voices/omoroiyan/omoroiyan1.mp3', 'おもろいやんX3'),
               Button(
                   size, audio, 'voices/omoroiyan/omoroiyan2.mp3', 'ろいやんろいやん'),
-              Button(size, audio, 'voices/omoroiyan/omoroiyan003.mp3',
-                  'なにがおもろいこれ？'),
+              Button(
+                  size, audio, 'voices/omoroiyan/omoroiyan3.mp3', 'なにがおもろいこれ？'),
             ],
           ),
         ),

@@ -36,7 +36,7 @@ class NiceOk extends StatelessWidget {
               Button(
                 size,
                 audio,
-                'voices/nice_ok/okay007.mp3',
+                'voices/nice_ok/okay7.mp3',
                 'OK 007',
                 isPurple: true,
               ),
