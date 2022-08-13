@@ -40,38 +40,38 @@ class Audio {
 
 class _HomeScreenState extends State<HomeScreen> {
   Audio audio = Audio();
+  List<Widget> tabs = [
+    const Tab(text: 'ご挨拶'),
+    const Tab(text: '無敵状態音声（仮）'),
+    const Tab(text: '名シーン'),
+    // Tab(text: '名言・格言'),
+    // Tab(text: '持ちつ持たれつ'),
+    // Tab(text: '迷シーン・迷言'),
+    // Tab(text: 'えぐいて'),
+    // Tab(text: 'ポーン'),
+    // Tab(text: 'タルコフ2022/06 - スタック編'),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       // initialIndex: 0, // 最初に表示するタブ
-      length: 2, // タブの数
+      length: tabs.length, // タブの数
       child: Scaffold(
         appBar: AppBar(
           flexibleSpace: Column(
             mainAxisAlignment: MainAxisAlignment.end,
-            children: const [
+            children: [
               TabBar(
-                indicator: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(10.0),
-                        topRight: Radius.circular(10.0)),
-                    color: Colors.white),
-                labelColor: Colors.black,
-                unselectedLabelColor: Colors.white,
-                isScrollable: true,
-                tabs: <Widget>[
-                  Tab(text: 'ご挨拶'),
-                  Tab(text: '無敵状態音声（仮）'),
-                  // Tab(text: '名シーン'),
-                  // Tab(text: '名言・格言'),
-                  // Tab(text: '持ちつ持たれつ'),
-                  // Tab(text: '迷シーン・迷言'),
-                  // Tab(text: 'えぐいて'),
-                  // Tab(text: 'ポーン'),
-                  // Tab(text: 'タルコフ2022/06 - スタック編'),
-                ],
-              ),
+                  indicator: const BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(10.0),
+                          topRight: Radius.circular(10.0)),
+                      color: Colors.white),
+                  labelColor: Colors.black,
+                  unselectedLabelColor: Colors.white,
+                  isScrollable: true,
+                  tabs: tabs),
             ],
           ),
         ),
@@ -80,9 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             Goaisatu(audio),
             Mutekijoutai(audio),
-            // MeiScene(
-            //   audioPlayerStart: audioPlayer,
-            // ),
+            MeiScene(audio),
             // MeigenKakugen(
             //   audioPlayerStart: audioPlayer,
             // ),
