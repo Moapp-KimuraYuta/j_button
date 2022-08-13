@@ -22,7 +22,9 @@ class Button extends StatelessWidget {
             height: size.height * 0.07,
             child: ElevatedButton(
                 onPressed: () {
-                  audio.playSound(assetPath);
+                  if (assetPath.isNotEmpty) {
+                    audio.playSound(assetPath);
+                  }
                 },
                 style: ElevatedButton.styleFrom(
                     primary: isPurple ? Colors.purple : Colors.blue),

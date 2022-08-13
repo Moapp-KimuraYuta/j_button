@@ -81,6 +81,22 @@ flutter:
     - voices/eguite/
     - voices/poon/
     - voices/tarkov/
+    - voices/rust/
+    - voices/DQXIS/
+    - voices/karasu_hato/
+    - voices/hanya/
+    - voices/tukkomi/
+    - voices/nice_ok/
+    - voices/omoroiyan/
+    - voices/yaroya/
+    - voices/renko/
+    - voices/h/
+    - voices/shaka/
+    - voices/monomane/
+    - voices/scream/
+    - voices/XXJ/
+    - voices/uncategorized1/
+    - voices/uncategorized2/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

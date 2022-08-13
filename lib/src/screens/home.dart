@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:j_button/src/screens/tabs/dqxis.dart';
 import 'package:j_button/src/screens/tabs/goaisatu.dart';
+import 'package:j_button/src/screens/tabs/hanya.dart';
+import 'package:j_button/src/screens/tabs/karasu_hato.dart';
 import 'package:j_button/src/screens/tabs/mutekijoutai.dart';
 import 'package:j_button/src/screens/tabs/meiscene.dart';
 import 'package:j_button/src/screens/tabs/meigen_kakugen.dart';
 import 'package:j_button/src/screens/tabs/motitu_motaretu.dart';
 import 'package:j_button/src/screens/tabs/meiscene_meigen.dart';
 import 'package:j_button/src/screens/tabs/eguite.dart';
+import 'package:j_button/src/screens/tabs/nice_ok.dart';
 import 'package:j_button/src/screens/tabs/poon.dart';
+import 'package:j_button/src/screens/tabs/rust.dart';
 import 'package:j_button/src/screens/tabs/tarkov.dart';
+import 'package:j_button/src/screens/tabs/tukkomi.dart';
 import 'package:just_audio/just_audio.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -50,6 +56,12 @@ class _HomeScreenState extends State<HomeScreen> {
     const Tab(text: 'えぐいて'),
     const Tab(text: 'ポーン'),
     const Tab(text: 'タルコフ2022/06 - スタック編'),
+    const Tab(text: 'RUSTストリーマー鯖2022/06 - JAS航空編'),
+    const Tab(text: 'DQXIS - じゃすカジノ編'),
+    const Tab(text: 'カラス・鳩'),
+    const Tab(text: 'はにゃ？'),
+    const Tab(text: '鋭いツッコミ'),
+    const Tab(text: 'ナイス・OK'),
   ];
 
   @override
@@ -88,6 +100,12 @@ class _HomeScreenState extends State<HomeScreen> {
             Eguite(size, audio),
             Poon(size, audio),
             Tarkov(size, audio),
+            Rust(size, audio),
+            Dqxis(size, audio),
+            KarasuHato(size, audio),
+            Hanya(size, audio),
+            Tukkomi(size, audio),
+            NiceOk(size, audio),
           ],
         ),
       ),
