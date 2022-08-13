@@ -3,12 +3,12 @@ import 'package:j_button/src/Widgets/button.dart';
 import 'package:j_button/src/screens/home.dart';
 
 class Mutekijoutai extends StatelessWidget {
-  const Mutekijoutai(this.audio, {Key? key}) : super(key: key);
+  const Mutekijoutai(this.size, this.audio, {Key? key}) : super(key: key);
   final Audio audio;
+  final Size size;
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Center(
         child: Scrollbar(

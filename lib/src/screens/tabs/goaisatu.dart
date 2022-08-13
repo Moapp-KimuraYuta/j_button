@@ -3,13 +3,12 @@ import 'package:j_button/src/screens/home.dart';
 import 'package:j_button/src/Widgets/button.dart';
 
 class Goaisatu extends StatelessWidget {
-  const Goaisatu(this.audio, {Key? key}) : super(key: key);
+  const Goaisatu(this.size, this.audio, {Key? key}) : super(key: key);
   final Audio audio;
+  final Size size;
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
-
     return Scaffold(
       body: Center(
         child: Scrollbar(

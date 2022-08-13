@@ -44,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const Tab(text: 'ご挨拶'),
     const Tab(text: '無敵状態音声（仮）'),
     const Tab(text: '名シーン'),
-    // Tab(text: '名言・格言'),
+    const Tab(text: '名言・格言'),
     // Tab(text: '持ちつ持たれつ'),
     // Tab(text: '迷シーン・迷言'),
     // Tab(text: 'えぐいて'),
@@ -54,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     return DefaultTabController(
       // initialIndex: 0, // 最初に表示するタブ
       length: tabs.length, // タブの数
@@ -78,12 +79,10 @@ class _HomeScreenState extends State<HomeScreen> {
         body: TabBarView(
           physics: const NeverScrollableScrollPhysics(),
           children: <Widget>[
-            Goaisatu(audio),
-            Mutekijoutai(audio),
-            MeiScene(audio),
-            // MeigenKakugen(
-            //   audioPlayerStart: audioPlayer,
-            // ),
+            Goaisatu(size, audio),
+            Mutekijoutai(size, audio),
+            MeiScene(size, audio),
+            MeigenKakugen(size, audio),
             // MotituMotaretu(
             //   audioPlayerStart: audioPlayer,
             // ),
