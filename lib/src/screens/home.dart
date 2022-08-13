@@ -7,7 +7,7 @@ import 'package:j_button/src/screens/tabs/motitu_motaretu.dart';
 import 'package:j_button/src/screens/tabs/meiscene_meigen.dart';
 import 'package:j_button/src/screens/tabs/eguite.dart';
 import 'package:j_button/src/screens/tabs/poon.dart';
-import 'package:j_button/src/screens/tabs/tab8.dart';
+import 'package:j_button/src/screens/tabs/tarkov.dart';
 import 'package:just_audio/just_audio.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,10 +20,10 @@ class HomeScreen extends StatefulWidget {
 class Audio {
   List<AudioPlayer> audioPlayer = [
     AudioPlayer(),
-    AudioPlayer(),
-    AudioPlayer(),
-    AudioPlayer(),
-    AudioPlayer(),
+    // AudioPlayer(),
+    // AudioPlayer(),
+    // AudioPlayer(),
+    // AudioPlayer(),
   ];
   int audioPlayerStartPtr = 0;
   void playSound(String str) async {
@@ -46,10 +46,10 @@ class _HomeScreenState extends State<HomeScreen> {
     const Tab(text: '名シーン'),
     const Tab(text: '名言・格言'),
     const Tab(text: '持ちつ持たれつ'),
-    // const Tab(text: '迷シーン・迷言'),
-    // const Tab(text: 'えぐいて'),
-    // const Tab(text: 'ポーン'),
-    // const Tab(text: 'タルコフ2022/06 - スタック編'),
+    const Tab(text: '迷シーン・迷言'),
+    const Tab(text: 'えぐいて'),
+    const Tab(text: 'ポーン'),
+    const Tab(text: 'タルコフ2022/06 - スタック編'),
   ];
 
   @override
@@ -84,10 +84,10 @@ class _HomeScreenState extends State<HomeScreen> {
             MeiScene(size, audio),
             MeigenKakugen(size, audio),
             MotituMotaretu(size, audio),
-            // MeisceneMeigen(size, audio),
-            // Eguite(size, audio),
-            // Poon(size, audio),
-            // Tarkov(size, audio),
+            MeisceneMeigen(size, audio),
+            Eguite(size, audio),
+            Poon(size, audio),
+            Tarkov(size, audio),
           ],
         ),
       ),
