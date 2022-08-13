@@ -45,11 +45,11 @@ class _HomeScreenState extends State<HomeScreen> {
     const Tab(text: '無敵状態音声（仮）'),
     const Tab(text: '名シーン'),
     const Tab(text: '名言・格言'),
-    // Tab(text: '持ちつ持たれつ'),
-    // Tab(text: '迷シーン・迷言'),
-    // Tab(text: 'えぐいて'),
-    // Tab(text: 'ポーン'),
-    // Tab(text: 'タルコフ2022/06 - スタック編'),
+    const Tab(text: '持ちつ持たれつ'),
+    // const Tab(text: '迷シーン・迷言'),
+    // const Tab(text: 'えぐいて'),
+    // const Tab(text: 'ポーン'),
+    // const Tab(text: 'タルコフ2022/06 - スタック編'),
   ];
 
   @override
@@ -83,21 +83,11 @@ class _HomeScreenState extends State<HomeScreen> {
             Mutekijoutai(size, audio),
             MeiScene(size, audio),
             MeigenKakugen(size, audio),
-            // MotituMotaretu(
-            //   audioPlayerStart: audioPlayer,
-            // ),
-            // MeisceneMeigen(
-            //   audioPlayerStart: audioPlayer,
-            // ),
-            // Eguite(
-            //   audioPlayerStart: audioPlayer,
-            // ),
-            // Poon(
-            //   audioPlayerStart: audioPlayer,
-            // ),
-            // Tarkov(
-            //   audioPlayerStart: audioPlayer,
-            // ),
+            MotituMotaretu(size, audio),
+            // MeisceneMeigen(size, audio),
+            // Eguite(size, audio),
+            // Poon(size, audio),
+            // Tarkov(size, audio),
           ],
         ),
       ),
