@@ -19,20 +19,17 @@ class Shaka extends StatelessWidget {
             children: <Widget>[
               Button(size, audio, 'voices/shaka/shakanohoneytrap.mp3',
                   '釈迦のハニートラップ'),
+              Button(size, audio, 'voices/shaka/shakatan2.mp3', 'しゃかたん...////'),
+              Button(size, audio, 'voices/shaka/shaka1.mp3', '釈迦く～～ん'),
+              Button(size, audio, 'voices/shaka/shaka2.mp3', 'REALSHAKAKINTV'),
+              Button(size, audio, 'voices/shaka/shaka3.mp3', '釈迦さん？'),
               Button(
-                  size, audio, 'voices/shaka/shakatan002.mp3', 'しゃかたん...////'),
-              Button(size, audio, 'voices/shaka/shaka001.mp3', '釈迦く～～ん'),
-              Button(
-                  size, audio, 'voices/shaka/shaka002.mp3', 'REALSHAKAKINTV'),
-              Button(size, audio, 'voices/shaka/shaka003.mp3', '釈迦さん？'),
-              Button(
-                  size, audio, 'voices/shaka/shaka004.mp3', 'ｼｬｶたん、ｼｬｶたん（ﾊｧﾊｧ'),
-              Button(size, audio, 'voices/shaka/shaka005.mp3', 'しゃかたん//'),
-              Button(
-                  size, audio, 'voices/shaka/shaka006.mp3', 'ｼｬｶたん！？ｼｬｶたん！？'),
-              Button(size, audio, 'voices/shaka/shaka007.mp3', '釈迦さんち〇こ'),
-              Button(size, audio, 'voices/shaka/shaka008.mp3', 'ｼｬｶたん、ｼｬｶたん！'),
-              Button(size, audio, 'voices/shaka/shaka009.mp3', 'しゃかたん'),
+                  size, audio, 'voices/shaka/shaka4.mp3', 'ｼｬｶたん、ｼｬｶたん（ﾊｧﾊｧ'),
+              Button(size, audio, 'voices/shaka/shaka5.mp3', 'しゃかたん//'),
+              Button(size, audio, 'voices/shaka/shaka6.mp3', 'ｼｬｶたん！？ｼｬｶたん！？'),
+              Button(size, audio, 'voices/shaka/shaka7.mp3', '釈迦さんち〇こ'),
+              Button(size, audio, 'voices/shaka/shaka8.mp3', 'ｼｬｶたん、ｼｬｶたん！'),
+              Button(size, audio, 'voices/shaka/shaka9.mp3', 'しゃかたん'),
             ],
           ),
         ),

@@ -17,7 +17,7 @@ class KarasuHato extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
-              Button(size, audio, 'voices/karasu_hato/karasu1.mp3', 'カラス1'),
+              Button(size, audio, 'voices/karasu_hato/karasu.mp3', 'カラス1'),
               Button(size, audio, 'voices/karasu_hato/karasu2.mp3', 'カラス2'),
               Button(size, audio, 'voices/karasu_hato/karasu3.mp3', 'カラス3'),
               Button(size, audio, 'voices/karasu_hato/karasu4.mp3', 'カラス4'),
@@ -39,7 +39,7 @@ class KarasuHato extends StatelessWidget {
                   'カラスwithあたる君'),
               Button(size, audio, 'voices/karasu_hato/karasu5.mp3', '早朝からカラス'),
               Button(size, audio, 'voices/karasu_hato/karasu11.mp3', 'カラスの断末魔'),
-              Button(size, audio, 'voices/karasu_hato/hato1.mp3', '鳩1'),
+              Button(size, audio, 'voices/karasu_hato/hato.mp3', '鳩1'),
               Button(size, audio, 'voices/karasu_hato/hato2.mp3', '鳩2'),
               Button(size, audio, 'voices/karasu_hato/hato3.mp3', '鳩3'),
               Button(size, audio, 'voices/karasu_hato/hato4.mp3', '鳩4'),

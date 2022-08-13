@@ -17,14 +17,13 @@ class Hanya extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
-              Button(size, audio, 'voices/hanya/hanya001.mp3', 'はにゃ？1'),
-              Button(
-                  size, audio, 'voices/hanya/hanya002.mp3', 'キャラコンミスった時のはにゃ'),
-              Button(size, audio, 'voices/hanya/hanyapoyo001.mp3', 'はにゃぽよ～ｗ'),
+              Button(size, audio, 'voices/hanya/hanya.mp3', 'はにゃ？1'),
+              Button(size, audio, 'voices/hanya/hanya2.mp3', 'キャラコンミスった時のはにゃ'),
+              Button(size, audio, 'voices/hanya/hanyapoyo.mp3', 'はにゃぽよ～ｗ'),
               Button(size, audio, 'voices/hanya/ojisanyane.mp3',
                   '使ったことないやつおじさんやね'),
-              Button(size, audio, 'voices/hanya/hanya005.mp3', '年下はにゃ？'),
-              Button(size, audio, 'voices/hanya/hanya006.mp3', 'は、はにゃ？'),
+              Button(size, audio, 'voices/hanya/hanya5.mp3', '年下はにゃ？'),
+              Button(size, audio, 'voices/hanya/hanya6.mp3', 'は、はにゃ？'),
             ],
           ),
         ),

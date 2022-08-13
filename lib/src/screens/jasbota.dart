@@ -26,37 +26,11 @@ import 'package:j_button/src/screens/tabs/uncategorized2.dart';
 import 'package:j_button/src/screens/tabs/yaroya.dart';
 import 'package:just_audio/just_audio.dart';
 
-class Jasbota extends StatefulWidget {
-  const Jasbota({Key? key}) : super(key: key);
+class Jasbota extends StatelessWidget {
+  Jasbota({Key? key}) : super(key: key);
 
-  @override
-  State<Jasbota> createState() => _JasbotaState();
-}
-
-class Audio {
-  List<AudioPlayer> audioPlayer = [
-    AudioPlayer(),
-    // AudioPlayer(),
-    // AudioPlayer(),
-    // AudioPlayer(),
-    // AudioPlayer(),
-  ];
-  int audioPlayerStartPtr = 0;
-  void playSound(String str) async {
-    audioPlayerStartPtr += 1;
-    if (audioPlayerStartPtr >= audioPlayer.length) {
-      audioPlayerStartPtr = 0;
-    }
-    audioPlayer[audioPlayerStartPtr].setAsset(str);
-    await audioPlayer[audioPlayerStartPtr].pause();
-    await audioPlayer[audioPlayerStartPtr].seek(Duration.zero);
-    await audioPlayer[audioPlayerStartPtr].play();
-  }
-}
-
-class _JasbotaState extends State<Jasbota> {
-  Audio audio = Audio();
-  List<Widget> tabs = [
+  final Audio audio = Audio();
+  final List<Widget> tabs = [
     const Tab(text: 'ご挨拶'),
     const Tab(text: '無敵状態音声（仮）'),
     const Tab(text: '名シーン'),
@@ -140,5 +114,26 @@ class _JasbotaState extends State<Jasbota> {
             ],
           )),
     );
+  }
+}
+
+class Audio {
+  List<AudioPlayer> audioPlayer = [
+    AudioPlayer(),
+    // AudioPlayer(),
+    // AudioPlayer(),
+    // AudioPlayer(),
+    // AudioPlayer(),
+  ];
+  int audioPlayerStartPtr = 0;
+  void playSound(String str) async {
+    audioPlayerStartPtr += 1;
+    if (audioPlayerStartPtr >= audioPlayer.length) {
+      audioPlayerStartPtr = 0;
+    }
+    audioPlayer[audioPlayerStartPtr].setAsset(str);
+    await audioPlayer[audioPlayerStartPtr].pause();
+    await audioPlayer[audioPlayerStartPtr].seek(Duration.zero);
+    await audioPlayer[audioPlayerStartPtr].play();
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:j_button/src/Widgets/background.dart';
-
 import 'screens/infomation.dart';
 import 'screens/jasbota.dart';
 
@@ -27,7 +26,7 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  static const _screens = [Jasbota(), Infomation()];
+  static final _screens = [Jasbota(), const Infomation()];
 
   int _selectedIndex = 0;
 
@@ -40,7 +39,13 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(children: [const Background(), _screens[_selectedIndex]]),
+        body: Stack(children: [
+          const Background(),
+          IndexedStack(
+            index: _selectedIndex,
+            children: _screens,
+          )
+        ]),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedIndex,
           onTap: _onItemTapped,

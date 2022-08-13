@@ -34,7 +34,7 @@ class Uncategorized2 extends StatelessWidget {
                   'ファイナルガチラスト'),
               Button(
                   size, audio, 'voices/uncategorized2/fuifui2.mp3', 'ﾌｲﾌｲﾌｲﾌｲ'),
-              Button(size, audio, 'voices/uncategorized2/warai003.mp3', 'ｗｗｗ'),
+              Button(size, audio, 'voices/uncategorized2/warai3.mp3', 'ｗｗｗ'),
               Button(size, audio, 'voices/uncategorized2/sensuda.mp3', 'センスだ'),
               Button(size, audio, 'voices/uncategorized2/usodaro.mp3', '嘘だろ'),
               Button(size, audio, 'voices/uncategorized2/oide.mp3', 'おいで'),
