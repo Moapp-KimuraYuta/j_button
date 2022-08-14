@@ -71,7 +71,7 @@ class Jasbota extends StatelessWidget {
                       Tab(text: 'おもろいやん'),
                       Tab(text: 'やろや'),
                       Tab(text: '連呼'),
-                      Tab(text: 'ｈ'),
+                      Tab(text: ' h '),
                       Tab(text: '釈迦さん'),
                       Tab(text: 'そっくりさん'),
                       Tab(text: '叫ぶ系'),
