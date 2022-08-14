@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.j_button">
+    package="com.chi_hi_ro.j_button">
     <queries>
         <!-- If your app opens https URLs -->
         <intent>
