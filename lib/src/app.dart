@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:j_button/src/Widgets/background.dart';
 import 'screens/jasbota.dart';
 
 class MyApp extends StatelessWidget {
@@ -27,11 +26,6 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(children: [
-        const Background(),
-        Jasbota(),
-      ]),
-    );
+    return Jasbota();
   }
 }

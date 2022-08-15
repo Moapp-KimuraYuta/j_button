@@ -7,12 +7,14 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage('images/okubakun.png'),
-            fit: BoxFit.contain,
-            opacity: 0.6),
+    return Scaffold(
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('images/okubakun.png'),
+              fit: BoxFit.contain,
+              opacity: 0.6),
+        ),
       ),
     );
   }

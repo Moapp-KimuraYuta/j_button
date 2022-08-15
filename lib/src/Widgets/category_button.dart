@@ -1,15 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:j_button/src/Widgets/audio.dart';
 
-class Button extends StatelessWidget {
-  const Button(this.audio, this.assetPath, this.text,
-      {Key? key, this.isPurple = false})
-      : super(key: key);
-
-  final Audio audio;
-  final String assetPath;
+class CategoryButton extends StatelessWidget {
+  const CategoryButton(this.text, this.nextPage, {Key? key}) : super(key: key);
   final String text;
-  final bool isPurple;
+  final StatelessWidget nextPage;
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +16,9 @@ class Button extends StatelessWidget {
             height: size.height * 0.07,
             child: ElevatedButton(
                 onPressed: () {
-                  audio.playSound(assetPath);
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => nextPage));
                 },
-                style: ElevatedButton.styleFrom(
-                    primary: isPurple ? Colors.purple : Colors.blue),
                 child: Text(
                   text,
                   style: TextStyle(fontSize: size.height * 0.015),
