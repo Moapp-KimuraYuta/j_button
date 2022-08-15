@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:j_button/src/screens/jasbota.dart';
 
 class Button extends StatelessWidget {
-  const Button(this.size, this.audio, this.assetPath, this.text,
+  const Button(this.audio, this.assetPath, this.text,
       {Key? key, this.isPurple = false})
       : super(key: key);
 
-  final Size size;
   final Audio audio;
   final String assetPath;
   final String text;
@@ -14,6 +13,7 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     return Container(
         margin: const EdgeInsets.symmetric(vertical: 4),
         height: size.height * 0.07,
@@ -22,9 +22,7 @@ class Button extends StatelessWidget {
             height: size.height * 0.07,
             child: ElevatedButton(
                 onPressed: () {
-                  if (assetPath.isNotEmpty) {
-                    audio.playSound(assetPath);
-                  }
+                  audio.playSound(assetPath);
                 },
                 style: ElevatedButton.styleFrom(
                     primary: isPurple ? Colors.purple : Colors.blue),

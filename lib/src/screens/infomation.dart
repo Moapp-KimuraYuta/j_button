@@ -75,14 +75,14 @@ class Infomation extends StatelessWidget {
             ),
             ElevatedButton(
                 onPressed: () {
-                  launchUrl(Uri.parse('https://twitter.com/chi_hi_roon'),
+                  launchUrl(Uri.parse('https://twitter.com/yuki_mura_929'),
                       mode: LaunchMode.externalApplication);
                 },
                 child: Row(
                   children: const [
                     Text("Twitter"),
                     Spacer(),
-                    Text("@chi_hi_roon"),
+                    Text("@yuki_mura_929"),
                   ],
                 )),
             Text(

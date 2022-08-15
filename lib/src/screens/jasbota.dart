@@ -1,39 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:j_button/src/screens/tabs/marumaruj.dart';
-import 'package:j_button/src/screens/tabs/dqxis.dart';
-import 'package:j_button/src/screens/tabs/goaisatu.dart';
-import 'package:j_button/src/screens/tabs/h.dart';
-import 'package:j_button/src/screens/tabs/hanya.dart';
-import 'package:j_button/src/screens/tabs/karasu_hato.dart';
-import 'package:j_button/src/screens/tabs/sokkuri.dart';
-import 'package:j_button/src/screens/tabs/mutekijoutai.dart';
-import 'package:j_button/src/screens/tabs/meiscene.dart';
-import 'package:j_button/src/screens/tabs/meigen_kakugen.dart';
-import 'package:j_button/src/screens/tabs/motitu_motaretu.dart';
-import 'package:j_button/src/screens/tabs/meiscene_meigen.dart';
-import 'package:j_button/src/screens/tabs/eguite.dart';
-import 'package:j_button/src/screens/tabs/nice_ok.dart';
-import 'package:j_button/src/screens/tabs/omoroiyan.dart';
-import 'package:j_button/src/screens/tabs/poon.dart';
-import 'package:j_button/src/screens/tabs/renko.dart';
-import 'package:j_button/src/screens/tabs/rust.dart';
-import 'package:j_button/src/screens/tabs/sakebu.dart';
-import 'package:j_button/src/screens/tabs/shaka.dart';
-import 'package:j_button/src/screens/tabs/tarkov.dart';
-import 'package:j_button/src/screens/tabs/tukkomi.dart';
-import 'package:j_button/src/screens/tabs/uncategorized1.dart';
-import 'package:j_button/src/screens/tabs/uncategorized2.dart';
-import 'package:j_button/src/screens/tabs/yaroya.dart';
+import 'tabs/marumaruj.dart';
+import 'tabs/dqxis.dart';
+import 'tabs/goaisatu.dart';
+import 'tabs/h.dart';
+import 'tabs/hanya.dart';
+import 'tabs/karasu_hato.dart';
+import 'tabs/sokkuri.dart';
+import 'tabs/mutekijoutai.dart';
+import 'tabs/meiscene.dart';
+import 'tabs/meigen_kakugen.dart';
+import 'tabs/motitu_motaretu.dart';
+import 'tabs/meiscene_meigen.dart';
+import 'tabs/eguite.dart';
+import 'tabs/nice_ok.dart';
+import 'tabs/omoroiyan.dart';
+import 'tabs/poon.dart';
+import 'tabs/renko.dart';
+import 'tabs/rust.dart';
+import 'tabs/sakebu.dart';
+import 'tabs/shaka.dart';
+import 'tabs/tarkov.dart';
+import 'tabs/tukkomi.dart';
+import 'tabs/uncategorized1.dart';
+import 'tabs/uncategorized2.dart';
+import 'tabs/yaroya.dart';
 import 'package:just_audio/just_audio.dart';
 
 class Jasbota extends StatelessWidget {
   Jasbota({Key? key}) : super(key: key);
-
   final Audio audio = Audio();
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.of(context).size;
     return DefaultTabController(
       initialIndex: 0, // 最初に表示するタブ
       length: 25, // タブの数
@@ -84,31 +82,31 @@ class Jasbota extends StatelessWidget {
           ),
           body: TabBarView(
             children: <Widget>[
-              Goaisatu(size, audio),
-              Mutekijoutai(size, audio),
-              MeiScene(size, audio),
-              MeigenKakugen(size, audio),
-              MotituMotaretu(size, audio),
-              MeisceneMeigen(size, audio),
-              Eguite(size, audio),
-              Poon(size, audio),
-              Tarkov(size, audio),
-              Rust(size, audio),
-              Dqxis(size, audio),
-              KarasuHato(size, audio),
-              Hanya(size, audio),
-              Tukkomi(size, audio),
-              NiceOk(size, audio),
-              Omoroiyan(size, audio),
-              Yaroya(size, audio),
-              Renko(size, audio),
-              H(size, audio),
-              Shaka(size, audio),
-              Sokkuri(size, audio),
-              Sakebu(size, audio),
-              Marumaruj(size, audio),
-              Uncategorized1(size, audio),
-              Uncategorized2(size, audio),
+              Goaisatu(audio),
+              Mutekijoutai(audio),
+              MeiScene(audio),
+              MeigenKakugen(audio),
+              MotituMotaretu(audio),
+              MeisceneMeigen(audio),
+              Eguite(audio),
+              Poon(audio),
+              Tarkov(audio),
+              Rust(audio),
+              Dqxis(audio),
+              KarasuHato(audio),
+              Hanya(audio),
+              Tukkomi(audio),
+              NiceOk(audio),
+              Omoroiyan(audio),
+              Yaroya(audio),
+              Renko(audio),
+              H(audio),
+              Shaka(audio),
+              Sokkuri(audio),
+              Sakebu(audio),
+              Marumaruj(audio),
+              Uncategorized1(audio),
+              Uncategorized2(audio),
             ],
           )),
     );

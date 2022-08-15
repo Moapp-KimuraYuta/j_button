@@ -3,12 +3,12 @@ import 'package:j_button/src/Widgets/button.dart';
 import 'package:j_button/src/screens/jasbota.dart';
 
 class Eguite extends StatelessWidget {
-  const Eguite(this.size, this.audio, {Key? key}) : super(key: key);
+  const Eguite(this.audio, {Key? key}) : super(key: key);
   final Audio audio;
-  final Size size;
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: Center(
@@ -17,15 +17,15 @@ class Eguite extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 vertical: size.height * 0, horizontal: size.width * 0.05),
             children: <Widget>[
-              Button(size, audio, 'voices/eguite/eguite.mp3', 'えぐいて01'),
-              Button(size, audio, 'voices/eguite/eguite2.mp3', 'えぐいて02'),
-              Button(size, audio, 'voices/eguite/eguite3.mp3', 'えぐいて03'),
-              Button(size, audio, 'voices/eguite/eguite4.mp3', 'えぐいて04'),
-              Button(size, audio, 'voices/eguite/eguite5.mp3', 'えぐいて05'),
-              Button(size, audio, 'voices/eguite/eguite6.mp3', 'えぐいて06'),
-              Button(size, audio, 'voices/eguite/eguite7.mp3', 'えぐいて07'),
-              Button(size, audio, 'voices/eguite/eguite8.mp3', 'えぐいて08'),
-              Button(size, audio, 'voices/eguite/eguite9.mp3', 'えぐいて09'),
+              Button(audio, 'voices/eguite/eguite.mp3', 'えぐいて01'),
+              Button(audio, 'voices/eguite/eguite2.mp3', 'えぐいて02'),
+              Button(audio, 'voices/eguite/eguite3.mp3', 'えぐいて03'),
+              Button(audio, 'voices/eguite/eguite4.mp3', 'えぐいて04'),
+              Button(audio, 'voices/eguite/eguite5.mp3', 'えぐいて05'),
+              Button(audio, 'voices/eguite/eguite6.mp3', 'えぐいて06'),
+              Button(audio, 'voices/eguite/eguite7.mp3', 'えぐいて07'),
+              Button(audio, 'voices/eguite/eguite8.mp3', 'えぐいて08'),
+              Button(audio, 'voices/eguite/eguite9.mp3', 'えぐいて09'),
             ],
           ),
         ),
