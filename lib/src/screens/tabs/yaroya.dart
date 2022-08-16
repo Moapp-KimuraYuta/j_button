@@ -13,7 +13,11 @@ class Yaroya extends StatelessWidget {
       const Background(),
       Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(title: const Text('やろや'), centerTitle: false),
+        appBar: AppBar(
+          title: const Text('やろや'),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(

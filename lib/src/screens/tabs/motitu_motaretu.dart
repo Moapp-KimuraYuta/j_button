@@ -14,7 +14,11 @@ class MotituMotaretu extends StatelessWidget {
       const Background(),
       Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(title: const Text('持ちつ持たれつ'), centerTitle: false),
+        appBar: AppBar(
+          title: const Text('持ちつ持たれつ'),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(

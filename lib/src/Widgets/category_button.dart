@@ -9,19 +9,24 @@ class CategoryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Container(
-        margin: const EdgeInsets.symmetric(vertical: 4),
+        margin: const EdgeInsets.symmetric(vertical: 2),
         height: size.height * 0.07,
-        child: SizedBox(
-            width: size.width * 0.9,
-            height: size.height * 0.07,
-            child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => nextPage));
-                },
-                child: Text(
+        child: ElevatedButton(
+            style: ElevatedButton.styleFrom(elevation: 0),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => nextPage));
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
                   text,
                   style: TextStyle(fontSize: size.height * 0.015),
-                ))));
+                ),
+                const Spacer(),
+                const Icon(Icons.navigate_next_outlined)
+              ],
+            )));
   }
 }

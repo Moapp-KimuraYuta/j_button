@@ -94,6 +94,7 @@ class Jasbota extends StatelessWidget {
           appBar: AppBar(
             title: const Text('じゃすぼた'),
             centerTitle: false,
+            elevation: 0,
             actions: <Widget>[
               IconButton(
                 icon: const Icon(Icons.info_outline),
@@ -110,8 +111,8 @@ class Jasbota extends StatelessWidget {
             child: Scrollbar(
               child: ListView.builder(
                 padding: EdgeInsets.only(
-                    left: size.width * 0.05,
-                    right: size.width * 0.05,
+                    left: size.width * 0.03,
+                    right: size.width * 0.03,
                     bottom: size.height * 0.05),
                 itemBuilder: (BuildContext context, int index) {
                   String categoryName = category[index];

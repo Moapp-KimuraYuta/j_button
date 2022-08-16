@@ -13,7 +13,11 @@ class Shaka extends StatelessWidget {
       const Background(),
       Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(title: const Text('釈迦さん'), centerTitle: false),
+        appBar: AppBar(
+          title: const Text('釈迦さん'),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(

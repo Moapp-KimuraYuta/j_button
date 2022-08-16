@@ -14,7 +14,10 @@ class Tarkov extends StatelessWidget {
       Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-            title: const Text('タルコフ2022/06 - スタック編'), centerTitle: false),
+          title: const Text('タルコフ2022/06 - スタック編'),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(

@@ -14,7 +14,11 @@ class Mutekijoutai extends StatelessWidget {
       const Background(),
       Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(title: const Text('無敵状態音声（仮）'), centerTitle: false),
+        appBar: AppBar(
+          title: const Text('無敵状態音声（仮）'),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(

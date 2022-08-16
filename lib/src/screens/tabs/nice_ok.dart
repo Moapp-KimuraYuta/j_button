@@ -13,7 +13,11 @@ class NiceOk extends StatelessWidget {
       const Background(),
       Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(title: const Text('ナイス・OK'), centerTitle: false),
+        appBar: AppBar(
+          title: const Text('ナイス・OK'),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(

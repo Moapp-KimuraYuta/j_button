@@ -13,7 +13,11 @@ class Uncategorized1 extends StatelessWidget {
       const Background(),
       Scaffold(
         backgroundColor: Colors.transparent,
-        appBar: AppBar(title: const Text('整理中１'), centerTitle: false),
+        appBar: AppBar(
+          title: const Text('整理中１'),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(

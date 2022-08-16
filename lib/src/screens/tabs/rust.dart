@@ -14,20 +14,22 @@ class Rust extends StatelessWidget {
       Scaffold(
         backgroundColor: Colors.transparent,
         appBar: AppBar(
-            title: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'RUSTストリーマー鯖',
-                  style: TextStyle(fontSize: size.width * 0.04),
-                ),
-                Text(
-                  '2022/06 - JAS航空編',
-                  style: TextStyle(fontSize: size.width * 0.04),
-                ),
-              ],
-            ),
-            centerTitle: false),
+          title: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'RUSTストリーマー鯖',
+                style: TextStyle(fontSize: size.width * 0.04),
+              ),
+              Text(
+                '2022/06 - JAS航空編',
+                style: TextStyle(fontSize: size.width * 0.04),
+              ),
+            ],
+          ),
+          centerTitle: false,
+          elevation: 0,
+        ),
         body: Center(
           child: Scrollbar(
             child: ListView(
