@@ -1,6 +1,6 @@
 # j_button
 
-A new Flutter project.
+じゃすぼたアプリ版
 
 ## Getting Started
 
